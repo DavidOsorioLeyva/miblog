@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        grid-template-rows: 70px 1fr;
+
+    }
+    .icons-container .icons {
+        justify-content: center;
+    }
+    .icons-container .icons a:last-child {
+        margin-right: 15px;
+    }
+    header nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    nav .logo-container a {
+        margin: 0;
+    }
+    nav .profile-container a {
+        margin: 0;
+    }
+    /*-----------*/
+    main {
+        height: calc(100vh - 208px);
+        grid-template-rows: 180px 60px;
+    }
+    main h1 {
+        font-size: 1.5em;
+    }
+}

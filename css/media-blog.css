@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        grid-template-rows: 70px 1fr;
+
+    }
+    .icons-container .icons {
+        justify-content: center;
+    }
+    .icons-container .icons a:last-child {
+        margin-right: 15px;
+    }
+    header nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    nav .logo-container a {
+        margin: 0;
+    }
+    nav .profile-container a {
+        margin: 0;
+    }
+    .blog-contact-container {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .blog-contact-container .card-contact {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+}

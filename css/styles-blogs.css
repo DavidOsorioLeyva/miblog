@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .icons-container {
+    background-color: #47CFAC;
+}
+.icons-container .icons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icons-container .icons a {
+    margin: 0 15px;
+}
+.icons-container .icons a:last-child {
+    margin-right: 30px;
+}
+.icons-container .icons i::before{
+    color: white;
+    font-size: 30px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo-container a {
+    margin-left: 20px;
+}
+nav .profile-container a {
+    margin-right: 50px;
+    border-bottom: 1px solid black;
+}
+nav .logo-container img {
+    height: 65px;
+}
+/*--------------------*/
+.blogs-main {
+    width: 100%;
+    height: 400px;
+    background-color: #E6E9ED;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.blogs-main .blogs-main-title {
+    justify-self: self-end;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+.blogs-main .blogs-main-title h3 {
+    margin-bottom: 10px;
+}
+.blogs-main .blogs-main-title img {
+    width: 94%;
+}
+.blogs-main .blogs-main-descrip {
+    margin-top: 80px;
+    margin-left: 25px;
+    width: 450px;
+}
+.blogs-main .blogs-main-descrip h2 {
+    margin-bottom: 10px;
+}
+.blogs-main .blogs-main-descrip p {
+    margin-bottom: 35px;
+}
+.blogs-main .blogs-main-descrip a {
+    border: 1px solid #48CFAD;
+    padding: 10px;
+}
+.blogs-main .blogs-main-descrip a:hover {
+    color: white;
+    background-color: #48CFAD;
+}
+.blogs-section {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    justify-items: center;
+}
+.blogs-section .articles-container {
+    border-top: 1px solid #cdd2da;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 20px;
+}
+.blogs-section .articles-container article img {
+    width: 100%;
+}
+.blogs-section .articles-container article p {
+    margin-bottom: 10px;
+}
+.blogs-section .articles-container article .p-1 {
+    font-weight: bolder;
+    margin-top: 12px;
+}
+.blogs-section .articles-container article a {
+    border: 1px solid #48CFAD;
+    line-height: 3;
+    padding: 10px;
+}
+.blogs-section .articles-container article a:hover {
+    color: white;
+    background-color: #48CFAD;
+}
+/*--------------*/
+footer {
+    width: 100%;
+    height: 110px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 30px 80px;
+    background-color: #22272D;
+}
+footer .void {
+    background-color: #47CFAC;
+}
+footer .footer-section {
+    color: white;
+    align-self: center;
+    justify-self: center;
+}

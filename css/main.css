@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .icons-container {
+    background-color: #47CFAC;
+}
+.icons-container .icons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icons-container .icons a {
+    margin: 0 15px;
+}
+.icons-container .icons a:last-child {
+    margin-right: 30px;
+}
+.icons-container .icons i::before{
+    color: white;
+    font-size: 30px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo-container a {
+    margin-left: 20px;
+}
+nav .profile-container a {
+    margin-right: 50px;
+    border-bottom: 1px solid black;
+}
+nav .logo-container img {
+    height: 65px;
+}
+main {
+    background-image: url(https://i.ibb.co/fXGSsSq/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+main .title-home {
+    width: 70%;
+}
+main .link-container {
+    align-self: self-start;
+}
+main h1{
+    color: white;
+    letter-spacing: 10px;
+    text-align: center;
+}
+main .link-container button {
+    background: #47CFAC;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+main .link-container button:hover {
+    background: #248d73;
+}
